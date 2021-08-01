@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Food</title>
+</head>
+<body>
+    <h1>Here are some delicious foods!</h1>
+    @{
+        string[] foods = {"Apple Pie", "Burritos", "Clams Casino", "Donuts"};
+
+        foreach (var food in foods)
+        {
+            if (food.StartsWith("C"))
+            {
+                <p id="red">@food</p>
+            }
+            <p>@food</p>
+        }
+    }
+</body>
+</html>

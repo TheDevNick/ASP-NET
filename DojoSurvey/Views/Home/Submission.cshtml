@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="container">
+            <h1>Submitted Info</h1>
+        <section id="one">
+            @using FormSurvey.Models
+            @model Survey
+            <section><h1>User Name: </h1>@Model.Name</section>
+            <section><h1>User Location: </h1>@Model.Location</section>
+            <section><h1>Favorite Language: </h1>@Model.FavoriteLanguage</section>
+            <section><h1>User Comment: </h1>@Model.Comment</section>
+            <a href="/">Go back</a>
+        </section>
+    </section>
+    
+</body>
+</html>

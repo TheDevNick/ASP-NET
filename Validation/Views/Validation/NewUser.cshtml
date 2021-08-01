@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    @model User
+    <form asp-action="Create" asp-controller="Validation" method="post">
+        @* this span holds a place for the error messages *@
+        <span asp-validation-for="FirstName"></span> 
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName">
+
+        <span asp-validation-for="LastName"></span> 
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName">
+
+        <span asp-validation-for="Age"></span> 
+        <label asp-for="Age"></label>
+        <input asp-for="Age">
+        
+        @* this span holds a place for the error messages *@
+        <span asp-validation-for="Email"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email">
+        @* this span holds a place for the error messages *@
+        <span asp-validation-for="Password"></span>
+        <label asp-for="Password"></label>
+        <input asp-for="Password">
+        <input value="Submit" type="submit">    
+    </form>
+
+</body>
+</html>

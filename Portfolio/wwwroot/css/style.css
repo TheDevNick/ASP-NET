@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.myImg {
+    border-radius: 50%;
+    max-width: 100%;
+    border: 3px solid red;
+}
+
+li {
+    list-style: none;
+}
+
+/* container */
+.container {
+    width: 945px;
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+header li {
+    padding: 1em;
+}
+
+#aboutMe {
+    text-align: center;
+    margin-bottom: 1em;
+}
+#aboutMeText{
+    margin-left: 2em;
+}
+#aboutMeInfo {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.aboutMeBoxes {
+    width: 45%;
+}
+
+/* projects */
+
+#projectHeaderText {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+#projects {
+    background-color: gray;
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #fff;
+}
+
+/* contatc */
+#contactMeText h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* submission */
+
+#one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: red;
+}
+
+#one h1 {
+    color: red;
+}

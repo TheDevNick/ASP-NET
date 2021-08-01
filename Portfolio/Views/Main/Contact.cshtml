@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Nick Hollins Portfolio | Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Projects">Projects</a></li>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contactMeText">
+        <h1>Contact Me!</h1>
+    </section>
+    <form action="/FormResult" method = "post">
+    <label for="name">Name</label>
+    <input type="text" name="Name" id="name">
+
+    <label for="email">Email</label>
+    <input type="email" name="Email" id="email">
+
+    <label for="message">Message</label>
+    <textarea name="Message" id="message" cols="30" rows="10">Your Message</textarea>
+    <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>

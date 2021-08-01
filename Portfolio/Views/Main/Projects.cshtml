@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Nick Hollins Portfolio | Projects</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Projects">Projects</a></li>
+                <li><a href="/Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="projectHeaderText">
+        <h1>Here are some projects</h1>
+    </section>
+    <section id="projects">
+        <h2>Placeholder for projects</h2>
+
+
+@{
+    var StringList = new List<string>
+    {
+        "one",
+        "two",
+        "three",
+        "four"
+    };
+        
+    foreach(var word in StringList)
+    {
+        <div>
+            <p>@word</p>
+            
+            @if(word.Length < 4)
+            {
+                 <p>@word is a short word</p>
+            }
+       </div>
+    }
+}
+    </section>
+
+</body>
+</html>
+
+
+
