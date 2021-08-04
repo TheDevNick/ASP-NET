@@ -1,0 +1,28 @@
+    @using QuotingDojo.Models
+    @model GenerateQuote
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoting Dojo</title>
+</head>
+<body>
+    <h1>Welcome To Quoting Dojo!</h1>
+<form asp-action="/create" asp-controller= "Home"  method="post">
+    <div class="form-group">
+        <span asp-validation-for="User"></span>
+        <label asp-for="User">Name</label>
+        <input type="text" asp-for="User">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="UserQuote"></span>
+        <label asp-for="UserQuote">Quote</label>
+        <textarea asp-for="UserQuote" name="UserQuote" id="UserQuote" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" value="Add My Quote!">
+</form> 
+<a href="/quotes">Skip To Quotes!</a>
+</body>
+</html>
