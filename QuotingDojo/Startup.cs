@@ -31,7 +31,6 @@ namespace QuotingDojo
             app.UseRouting();
             app.UseMvc();
             app.UseStaticFiles();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>

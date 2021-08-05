@@ -1,5 +1,6 @@
     using System;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Http;
     using QuotingDojo.Models;
     using DbConnection;
     using System.Collections.Generic;
@@ -8,10 +9,10 @@
     {
         public class HomeController : Controller
         {
-            [HttpGet("/")]
+            [HttpGet("")]
             public ViewResult Index()
             {
-                return View();
+                return View("Index");
             }
 
         [HttpGet("/quotes")]
@@ -35,6 +36,10 @@
             return View("Index");
         }
 
+    
+
         
-        }
     }
+
+    }
+    

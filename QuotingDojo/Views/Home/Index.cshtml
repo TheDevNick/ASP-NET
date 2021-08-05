@@ -1,5 +1,5 @@
-    @using QuotingDojo.Models
-    @model GenerateQuote
+ @using QuotingDojo.Models
+@model GenerateQuote
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Welcome To Quoting Dojo!</h1>
-<form asp-action="/create" asp-controller= "Home"  method="post">
+<form action="/create"  method="POST">
     <div class="form-group">
         <span asp-validation-for="User"></span>
         <label asp-for="User">Name</label>
@@ -21,7 +21,7 @@
         <label asp-for="UserQuote">Quote</label>
         <textarea asp-for="UserQuote" name="UserQuote" id="UserQuote" cols="30" rows="10"></textarea>
     </div>
-    <input type="submit" value="Add My Quote!">
+    <input type="submit" value="Add My Quote!" action="Create">
 </form> 
 <a href="/quotes">Skip To Quotes!</a>
 </body>
