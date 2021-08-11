@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using CRUDelicious.Models;
 using System.Linq;
 // Other using statements
-namespace Monsters.Controllers
+namespace CRUDelicious.Controllers
 {
     public class HomeController : Controller
     {
